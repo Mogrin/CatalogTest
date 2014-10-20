@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C76BCA2019F42B2C002A31D7 /* TCLDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = C76BCA1F19F42B2C002A31D7 /* TCLDirectory.m */; };
+		C77C9A2219F4229500E59E8B /* TCLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77C9A2019F4229500E59E8B /* TCLMainViewController.m */; };
 		C7801A3519F410AC0079924D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7801A3419F410AC0079924D /* UIKit.framework */; };
 		C7801A3719F410AC0079924D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7801A3619F410AC0079924D /* Foundation.framework */; };
 		C7801A3919F410AC0079924D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7801A3819F410AC0079924D /* CoreGraphics.framework */; };
@@ -18,9 +20,14 @@
 		C7801A4B19F410AD0079924D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7801A4A19F410AD0079924D /* Default@2x.png */; };
 		C7801A4D19F410AD0079924D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7801A4C19F410AD0079924D /* Default-568h@2x.png */; };
 		C7801A5019F410AD0079924D /* TestCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7801A4E19F410AD0079924D /* TestCatalog.xcdatamodeld */; };
+		C7801A5719F4110A0079924D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7801A5619F4110A0079924D /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C76BCA1E19F42B2C002A31D7 /* TCLDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCLDirectory.h; path = ../../GUI/Models/TCLDirectory.h; sourceTree = "<group>"; };
+		C76BCA1F19F42B2C002A31D7 /* TCLDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCLDirectory.m; path = ../../GUI/Models/TCLDirectory.m; sourceTree = "<group>"; };
+		C77C9A1F19F4229500E59E8B /* TCLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLMainViewController.h; sourceTree = "<group>"; };
+		C77C9A2019F4229500E59E8B /* TCLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLMainViewController.m; sourceTree = "<group>"; };
 		C7801A3119F410AC0079924D /* TestCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7801A3419F410AC0079924D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7801A3619F410AC0079924D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +43,7 @@
 		C7801A4A19F410AD0079924D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C7801A4C19F410AD0079924D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C7801A4F19F410AD0079924D /* TestCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCatalog.xcdatamodel; sourceTree = "<group>"; };
+		C7801A5619F4110A0079924D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76BCA2119F4300D002A31D7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C76BCA1E19F42B2C002A31D7 /* TCLDirectory.h */,
+				C76BCA1F19F42B2C002A31D7 /* TCLDirectory.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C77C9A1B19F4229500E59E8B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C77C9A1C19F4229500E59E8B /* CORE */,
+				C77C9A1D19F4229500E59E8B /* GUI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C77C9A1C19F4229500E59E8B /* CORE */ = {
+			isa = PBXGroup;
+			children = (
+				C76BCA2119F4300D002A31D7 /* CoreData */,
+			);
+			path = CORE;
+			sourceTree = "<group>";
+		};
+		C77C9A1D19F4229500E59E8B /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				C77C9A1E19F4229500E59E8B /* Conrtollers */,
+				C77C9A2119F4229500E59E8B /* Models */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		C77C9A1E19F4229500E59E8B /* Conrtollers */ = {
+			isa = PBXGroup;
+			children = (
+				C77C9A1F19F4229500E59E8B /* TCLMainViewController.h */,
+				C77C9A2019F4229500E59E8B /* TCLMainViewController.m */,
+			);
+			path = Conrtollers;
+			sourceTree = "<group>";
+		};
+		C77C9A2119F4229500E59E8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C7801A2819F410AC0079924D = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +143,12 @@
 		C7801A3C19F410AC0079924D /* TestCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				C77C9A1B19F4229500E59E8B /* Source */,
 				C7801A4519F410AD0079924D /* TCLAppDelegate.h */,
 				C7801A4619F410AD0079924D /* TCLAppDelegate.m */,
 				C7801A4E19F410AD0079924D /* TestCatalog.xcdatamodeld */,
 				C7801A3D19F410AD0079924D /* Supporting Files */,
+				C7801A5619F4110A0079924D /* MainStoryboard.storyboard */,
 			);
 			path = TestCatalog;
 			sourceTree = "<group>";
@@ -162,6 +223,7 @@
 				C7801A4919F410AD0079924D /* Default.png in Resources */,
 				C7801A4B19F410AD0079924D /* Default@2x.png in Resources */,
 				C7801A4D19F410AD0079924D /* Default-568h@2x.png in Resources */,
+				C7801A5719F4110A0079924D /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +237,8 @@
 				C7801A4319F410AD0079924D /* main.m in Sources */,
 				C7801A4719F410AD0079924D /* TCLAppDelegate.m in Sources */,
 				C7801A5019F410AD0079924D /* TestCatalog.xcdatamodeld in Sources */,
+				C77C9A2219F4229500E59E8B /* TCLMainViewController.m in Sources */,
+				C76BCA2019F42B2C002A31D7 /* TCLDirectory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +353,7 @@
 				C7801A5519F410AD0079924D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
